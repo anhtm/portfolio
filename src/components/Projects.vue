@@ -5,7 +5,7 @@
       <div class="container has-text-centered" id="projects">
 
       <h3 class="title"> P R O J E C T S </h3>
-      
+
         <div class="columns is-multiline">
 
           <!-- <div class="column is-4-desktop">
@@ -25,27 +25,11 @@
             </div>
           </div> -->
 
-          <div class="column is-12-desktop">
-            <project title="AbracadaChef"
-                     :proj-key="1"
-                   description="An online meal-sharing platform, built with Vue.js and Bulma."
-                   >   
-            </project>
-          </div>
-
-          <div class="column is-12-desktop">
-            <project title="Buckist"
-                     :proj-key="2"
-                   description=" Buckist, in short for bucket list, is a full-stack Flask application that helps users keeping track of bucket ideas and wishes."
-                   >   
-            </project>
-          </div>
-
-          <div class="column is-12-desktop">
-            <project title="Memozoo"
-                     :proj-key="3"
-                   description="Memozoo is a single-player memory game in an animated animal theme, written in JavaScript and jQuery."
-                   >   
+          <div class="column is-12-desktop"
+               v-for="(proj,index) in projects">
+            <project :title="proj.title"
+                     :proj-key="index + 1"
+                     :description="proj.description">   
             </project>
           </div>
           
@@ -62,6 +46,25 @@ import ProjectBox from '@/components/ProjectBox.vue'
 export default {
   components: {
     [ProjectBox.name]: ProjectBox
+  },
+
+  data() {
+    return {
+      projects: [
+        {
+          title: "AbracadaChef",
+          description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform."
+        },
+        {
+          title: "Buckist",
+          description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes."
+        },
+        {
+          title: "MemoZoo",
+          description: "A single-player memory game in an animated animal theme, written in JavaScript and jQuery."
+        }
+      ]
+    }
   }
 }
 

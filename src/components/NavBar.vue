@@ -1,50 +1,5 @@
 <template>
 	<div class="section">
-		<!-- Navbar -->
-	    <!-- <div class="container">
-	      <nav class="navbar is-transparent">
-	        <div class="navbar-brand">
-	          	<router-link 
-	            	class="navbar-item title is-2 has-text-weight-light"
-	            	:to="{name: 'home'}">
-	            	 M I N H
-	            </router-link>
-	          <button class="button is-white navbar-burger burger" data-target="my-menu">
-	              <span></span>
-	              <span></span>
-	              <span></span>
-	          </button>
-	        </div>
-
-	        <div class="navbar-menu" id="my-menu">
-	          <div class="navbar-end">
-	            <a class="navbar-item" href="assets/resume-MinhAnhTrinh.pdf" target="_blank">
-	            RESUME
-	            </a>
-	            <router-link 
-	            	class="navbar-item is-link" 
-	            	:to="{name: 'about'}">
-	            	ABOUT
-	            </router-link>
-	            <router-link 
-	            	class="navbar-item is-link"
-	            	:to="{name: 'projects'}">
-	            	PROJECTS
-	            </router-link>
-	            <router-link 
-	            	class="navbar-item is-link"
-	            	:to="{name: 'services'}">
-	            	SERVICES
-	            </router-link>
-	            <router-link 
-	            	class="navbar-item is-link"
-	            	:to="{name: 'contact'}">
-	            	CONTACT
-	            </router-link>
-	          </div>
-	        </div>
-	      </nav>
-	    </div> -->
 
 	    <div class="level">
 	    	<div class="container">
@@ -62,35 +17,16 @@
     	<div class="columns is-centered">
     		<div class="column is-half">
     			<div class="level">
-    				<div class="level-item">
+    				<div class="level-item"
+    					 v-for="tab in tabs">
     					<router-link 
-			            	class="is-link" 
-			            	:to="{name: 'about'}">
-			            	ABOUT
+			            	class="is-link is-uppercase" 
+			            	:to="{name: tab}"
+			            	@click="choseTab">
+			            	{{tab}}
 			            </router-link>
     				</div>
-    				<div class="level-item">
-    					<router-link 
-			            	class="is-link"
-			            	:to="{name: 'projects'}">
-			            	PROJECTS
-			            </router-link>
-    				</div>
-    				<div class="level-item">
-    					<router-link 
-			            	class="is-link"
-			            	:to="{name: 'services'}">
-			            	SERVICES
-			            </router-link>
-    				</div>
-    				<div class="level-item">
-    					<router-link 
-			            	class="is-link"
-			            	:to="{name: 'contact'}">
-			            	CONTACT
-			            </router-link>
-    				</div>
-
+    				
     			</div>
     		</div>
     	</div>
@@ -101,7 +37,17 @@
 <script>
 
 export default {
-	name: 'app-navbar'
+	name: 'app-navbar',
+
+	data() {
+		return {
+			tabs: ['about', 'projects', 'services', 'contact']
+		}
+	},
+
+	methods: {
+		
+	}
 }
 </script>
 

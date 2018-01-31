@@ -4,6 +4,7 @@
     <app-navbar></app-navbar>
     <router-view/>
     <app-footer></app-footer>
+    
   </div>
 </template>
 
