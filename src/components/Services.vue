@@ -15,7 +15,7 @@
                    :sub-iii="service.sub3"
                    :icon-name="service.icon">
           </service>
-          
+
         </div>
 
         <!-- <a class="revert button is-black" href="mailto:anhtm.mtl@gmail.com?Subject=" target="_blank"> CONTACT ME</a> -->
@@ -38,11 +38,11 @@ export default {
     return {
       services: [
         {
-          title: "Backend Development",
-          sub1: '',
+          title: "Web Design",
+          sub1: 'Wireframes & Prototypes',
           sub2: '',
           sub3: '',
-          icon: 'database'
+          icon: 'paint-brush'
         },
         {
           title: "Frontend Development",
@@ -52,12 +52,13 @@ export default {
           icon: 'user-circle'
         },
         {
-          title: "Web Design",
-          sub1: '',
-          sub2: '',
+          title: "Backend Development",
+          sub1: 'Node.js & Django frameworks',
+          sub2: 'Customed APIs',
           sub3: '',
-          icon: 'paint-brush'
-        }
+          icon: 'database'
+        },
+        
       ]
     }
   }

@@ -6,6 +6,7 @@ import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
 import Services from '@/components/Services'
 import Project from '@/components/Project'
+import Skills from '@/components/Skills'
 
 
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/services',
       name: 'services',
       component: Services
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: Skills
     }
   ]
 })

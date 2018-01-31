@@ -1,5 +1,5 @@
 <template>
-	<div class="box">
+	<div class="box section">
 	  <article class="media">
 	    <div class="media-left">
 	      <figure class="image is-128x128">
@@ -18,8 +18,9 @@
 	          <a class="level-item">
 	            <router-link 
 	            	:to="{name: 'proj', params: {key: projKey}}"
-	            	>
-	            	See Project
+	            	class="button is-black is-outlined">
+	            	See Project 
+	            	
 	            </router-link>
 	          </a>
 	        </div>

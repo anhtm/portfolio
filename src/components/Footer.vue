@@ -13,7 +13,7 @@
 
             <div>
               Git Repo 
-              <a id="git-repo" href="https://github.com/anhtm/my-portfolio">@my-portfolio</a>
+              <a id="git-repo" href="https://github.com/anhtm/my-portfolio">@portfolio</a>
             </div>
           </div>
 

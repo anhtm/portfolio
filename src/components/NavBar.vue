@@ -25,7 +25,7 @@
 			            	@click="choseTab">
 
 			            	{{tab}}
-			            	
+
 			            </router-link>
     				</div>
     				
@@ -43,7 +43,7 @@ export default {
 
 	data() {
 		return {
-			tabs: ['about', 'projects', 'services', 'contact']
+			tabs: ['about', 'projects', 'services', 'skills', 'contact']
 		}
 	},
 

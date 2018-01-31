@@ -4,7 +4,7 @@
     <app-navbar></app-navbar>
     <router-view/>
     <app-footer></app-footer>
-    
+
   </div>
 </template>
 
@@ -18,6 +18,15 @@ export default {
   components: {
     [Navbar.name]: Navbar,
     [Footer.name]: Footer,
+  },
+
+  created() {
+    let devicon_url = "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    let devicon = document.createElement('link')
+    devicon.setAttribute('href', devicon_url)
+    devicon.setAttribute('rel', 'stylesheet')
+
+    document.head.appendChild(devicon);
   }
 }
 </script>
@@ -71,4 +80,5 @@ html,body {
 h3.title {
   margin-bottom: 5rem !important;
 }
+
 </style>
