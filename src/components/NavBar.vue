@@ -23,7 +23,9 @@
 			            	class="is-link is-uppercase" 
 			            	:to="{name: tab}"
 			            	@click="choseTab">
+
 			            	{{tab}}
+			            	
 			            </router-link>
     				</div>
     				

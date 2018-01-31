@@ -2,7 +2,7 @@
 	<div class="column is-4">
         <div class="box">
           <div class="service-logo">
-            <slot></slot>
+            <app-icon :name="iconName" scale="4"></app-icon>
           </div>
           <div class="info">
             <h4 class="title is-4"> {{ title }} </h4>
@@ -32,7 +32,7 @@
 export default {
 	name: 'service',
 
-	props: ['title', 'subI', 'subIi', 'subIii']
+	props: ['title', 'subI', 'subIi', 'subIii', 'iconName']
 }
 </script>
 
