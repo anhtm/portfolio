@@ -25,11 +25,14 @@
             </div>
           </div> -->
 
-          <div class="column is-12-desktop"
-               v-for="(proj,index) in projects">
-            <project :title="proj.title"
+          <div class=""
+               >
+            <project v-for="(proj,index) in projects"
+                     :title="proj.title"
                      :proj-key="index + 1"
-                     :description="proj.description">   
+                     :description="proj.description"
+                     :key="index">
+                        
             </project>
           </div>
           
@@ -53,11 +56,13 @@ export default {
       projects: [
         {
           title: "AbracadaChef",
-          description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform."
+          description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform.",
+          img: '../assets/abcdchef-res.png'
         },
         {
           title: "Buckist",
-          description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes."
+          description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes.",
+          img: '../assets/buckist-res.png'
         },
         {
           title: "MemoZoo",
@@ -69,6 +74,8 @@ export default {
 }
 
 </script>
+
 <style scoped>
+
 
 </style>

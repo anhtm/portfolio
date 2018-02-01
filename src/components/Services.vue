@@ -8,12 +8,13 @@
 
         <div class="columns is-multiline">
 
-          <service  v-for="service in services" 
+          <service  v-for="(service,i) in services" 
                     :title="service.title"
                    :sub-i="service.sub1"
                    :sub-ii="service.sub2"
                    :sub-iii="service.sub3"
-                   :icon-name="service.icon">
+                   :icon-name="service.icon"
+                   :key="i">
           </service>
 
         </div>

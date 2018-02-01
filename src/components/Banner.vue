@@ -9,10 +9,10 @@
                 class="title is-size-3-mobile is-size-1-desktop is-spaced has-text-weight-light"
                 id="my-name"> 
 
-                Hi, I'm Minh. 
+                Hi, I'm Minh :) 
             </h2>
-            <h3 class="subtitle is-4"> 
-              I do this and that. 
+            <h3 class="subtitle is-3"> 
+              I'm a web developer currently looking for internship in Summer 2018. 
             </h3>
 
 
@@ -44,11 +44,14 @@ export default {
 
 #my-name {
   color: whitesmoke;
-  font-size: 5rem;
+  font-size: 6rem !important;
+  font-weight: 300;
 }
 
 .subtitle {
   color: #1E1B18 !important;
   padding-bottom: 3rem;
+  font-weight: 300;
+
 }
 </style>

@@ -8,8 +8,9 @@
         
       <div class="columns is-mobile is-multiline">
 
-        <skill v-for="skill in skills"
-        		:name="skill"></skill>
+        <skill v-for="(skill,i) in skills"
+        		:name="skill"
+        		:key="i"></skill>
         
       </div>
       
@@ -66,6 +67,6 @@ export default {
 .devicon-django-plain,
 .devicon-heroku-plain,
 .devicon-nodejs-plain-wordmark {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 </style>
