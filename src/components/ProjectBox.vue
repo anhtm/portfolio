@@ -33,9 +33,12 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-2by1">
-              <img v-if="projKey == 1" src="../assets/abcdchef-res.png">
-              <img v-else-if="projKey == 2" src="../assets/buckist-res.png">
-              <img v-else-if="projKey == 3" src="../assets/memo-res.png">
+              <img v-if="projKey == 1" src="https://image.ibb.co/nOLTPR/abcdchef_res.png" alt="abcdchef_res" border="0">
+              
+              <img v-else-if="projKey == 2" src="https://image.ibb.co/cspKER/buckist_res.png" alt="buckist_res" border="0">
+              
+              <img v-else-if="projKey == 3" src="https://image.ibb.co/ncf6Tm/memo_res.png" alt="memo_res" border="0">
+
             </figure>
           </div>
           <div class="card-content">

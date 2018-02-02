@@ -10,6 +10,9 @@ import VueCarousel from 'vue-carousel';
 import Icon from 'vue-awesome/components/Icon'
 import Button from '@/components/Button'
 
+// Require the main Sass manifest file
+require('./mystyles.scss');
+
 Vue.config.productionTip = false
 Vue.use(VueCarousel);
 
