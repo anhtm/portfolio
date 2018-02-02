@@ -14,17 +14,21 @@
         
               <div id="about-me" class="content">
                 <p>
-                Hi! I’m Minh, a freelance <span>web developer</span> living in Montreal, Quebec. </br> </br>
+                Hi! I’m Minh, a <strong>web developer</strong> living in Montreal, Quebec. 
 
-                I create modern and fully responsive websites, from static sites to full-stack applications. My area of expertise includes Python & Javascript frameworks. 
                 </br> </br>
 
-                As a developer with lots of passion for clean and modern design, I always challenge myself to combine the beauty of both worlds to produce high-quality, well-functioning websites with stunning interfaces. </br> </br>
+                I build web applications (Javascript & Python), both frontend and backend apps. I also do web design (UI) on the other hand.
 
-                My services include frontend/backend development and web design. 
+                </br> </br>
+
+                I'm currently enrolled in Computer Science course in College LaSalle, specialized in Video Game Programming, which is quite interesting.
 
                 <br><br>
 
+                I love modern and stunning interfaces, but also fascinated by the beauty of scalability and modularity of a great web app. Best of both worlds, I would say.
+
+                <br><br>
                 If you need a website for either personal or professional use, don't hesitate to 
                 <router-link :to="{name: 'contact'}" class="is-warning">send me a message.</router-link> 
                 </p>
@@ -62,9 +66,5 @@
 #about-me p {
   text-align: justify;
   margin-bottom: 3rem;
-}
-
-#about-me span {
-  font-weight: bold;
 }
 </style>

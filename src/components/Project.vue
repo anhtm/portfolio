@@ -177,7 +177,7 @@ export default {
 					title: 'Buckist',
 					whatIdid: `
 						This was my first fullstack application which I built using Flask framework.
-						The idea was simple: build a bucket list application with fundamental CRUD functionalities. I used SQLAlchemy (a Flask extension) as to set up database schema. The most challenging part of the project is the deployment on Heroku. There were bugs that didn't appear in development environment but came up in deployment, which took quite a bit of researching to solve.`,
+						The idea was simple: build a bucket list application with fundamental CRUD functionalities. I used SQLAlchemy (a Flask extension) as to set up database schema. The most challenging part of the project was the deployment on Heroku. There were bugs that didn't appear in development environment but came up in deployment, which took quite a bit of researching to solve.`,
 					technologies: ['Backend', 'Python on Flask', 'DevOps', 'Bulma CSS Framework', 'HTML/CSS', 'Javascript', 'jQuery', 'SQLAlchemy'],
 					url: 'https://buckist.herokuapp.com/',
 					date: 'September 30th 2017'
