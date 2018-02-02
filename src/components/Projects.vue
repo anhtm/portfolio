@@ -57,12 +57,10 @@ export default {
         {
           title: "AbracadaChef",
           description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform.",
-          img: '../assets/abcdchef-res.png'
         },
         {
           title: "Buckist",
           description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes.",
-          img: '../assets/buckist-res.png'
         },
         {
           title: "MemoZoo",

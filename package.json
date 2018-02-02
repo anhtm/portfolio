@@ -9,12 +9,16 @@
     "start": "npm run dev",
     "build": "node build/build.js"
   },
+  "deploy": "node ./node_modules/vue-gh-pages/index.js",
+  "homepage": "https://github.com/anhtm/portfolio",
   "dependencies": {
     "bulma": "^0.6.2",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-carousel": "^0.6.5",
+    "vue-router": "^3.0.1",
+    "vue-slick": "^1.1.12"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

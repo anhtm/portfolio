@@ -43,8 +43,9 @@
             <p class="content">
             {{ description }}</p>
             <router-link 
-            	:to="{name: 'proj', params: {key: projKey}}"
+            	:to="{name: 'project', params: {key: projKey}}"
             	class="button is-black is-outlined">
+            	
             	See Project 
             	
             </router-link>

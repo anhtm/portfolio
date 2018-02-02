@@ -36,7 +36,7 @@ export default new Router({
     },
     {
       path: '/project/:key',
-      name: 'proj',
+      name: 'project',
       component: Project
     },
     {

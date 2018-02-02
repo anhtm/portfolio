@@ -21,7 +21,7 @@
 
         <!-- <a class="revert button is-black" href="mailto:anhtm.mtl@gmail.com?Subject=" target="_blank"> CONTACT ME</a> -->
 
-        <app-button name="Contact Me"></app-button>
+        <app-button name="Contact Me" class="is-warning"></app-button>
       </div>
     </section>
 	</div>
@@ -54,8 +54,8 @@ export default {
         },
         {
           title: "Backend Development",
-          sub1: 'Node.js & Django frameworks',
-          sub2: 'Customed APIs',
+          sub1: '',
+          sub2: '',
           sub3: '',
           icon: 'database'
         },

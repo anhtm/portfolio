@@ -21,17 +21,18 @@
 
                 As a developer with lots of passion for clean and modern design, I always challenge myself to combine the beauty of both worlds to produce high-quality, well-functioning websites with stunning interfaces. </br> </br>
 
+                My services include frontend/backend development and web design. 
+
+                <br><br>
+
                 If you need a website for either personal or professional use, don't hesitate to 
-                <router-link :to="{name: 'contact'}">send me a message.</router-link> 
+                <router-link :to="{name: 'contact'}" class="is-warning">send me a message.</router-link> 
                 </p>
               </div>
 
-
-
-              <!-- <app-button name="View Skills" to-route="projects"></app-button> -->
-
-              <app-button name="View Services" 
-                          to-route="services"
+              <app-button name="View Projects" 
+                          to-route="projects"
+                          class="is-warning"
               ></app-button>
               <app-button name="Say Hi!" 
                           to-route="contact"

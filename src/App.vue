@@ -2,7 +2,11 @@
   <div id="app">
     
     <app-navbar></app-navbar>
-    <router-view/>
+    <transition name="fade">
+    
+      <router-view></router-view>
+      
+    </transition>
     <app-footer></app-footer>
 
   </div>
@@ -39,6 +43,9 @@ export default {
 $black: #1E1B18;
 $black-invert: #fff;
 
+$red: #F54D42;
+$red-invert: #fff;
+
 $pink: #ff9068;
 $pink-invert: #fff;
 
@@ -47,7 +54,8 @@ $new-shadow: 3px 3px 7px #c3c3c3;
 
 $family-sanserif: "Roboto";
 
-
+$warning: $red;
+$warning-invert: $red-invert;
 $danger: $pink;
 $danger-invert: $pink-invert;
 $link: $black;
@@ -79,6 +87,13 @@ html,body {
 
 h3.title {
   margin-bottom: 5rem !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
 </style>

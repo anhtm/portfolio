@@ -19,12 +19,12 @@
     			<div class="level">
     				<div class="level-item"
     					 v-for="tab in tabs"
-    					 @click="selectTab(tab)"
+    					 
     					 >
     					<router-link 
 			            	class="is-link is-uppercase" 
 			            	:to="{name: tab}"
-			            	:class="{'is-chosen': tabChosen == tab}">
+			            	:class="{'is-chosen': $route.name == tab}">
 
 			            	{{tab}}
 
@@ -45,27 +45,11 @@ export default {
 
 	data() {
 		return {
-			tabs: ['home', 'about', 'projects', 'services', 'contact'],
-			tabChosen: ""
-
+			tabs: ['home', 'about', 'projects', 'contact']
 		}
 	},
 
-	methods: {
-		selectTab(selectedTab) {
-			
-			if (selectedTab = this.$route.name) {
-	    		this.tabChosen = selectedTab
-	    	}
-			
-		   
-
-		 }
-	},
-
-	computed: {
-		
-	}
+	
 }
 </script>
 
