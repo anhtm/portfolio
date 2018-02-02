@@ -18,14 +18,16 @@
     		<div class="column is-half">
     			<div class="level">
     				<div class="level-item"
-    					 v-for="tab in tabs">
+    					 v-for="tab in tabs"
+    					 
+    					 >
     					<router-link 
 			            	class="is-link is-uppercase" 
 			            	:to="{name: tab}"
-			            	@click="choseTab">
+			            	:class="{'is-chosen': $route.name == tab}">
 
 			            	{{tab}}
-			            	
+
 			            </router-link>
     				</div>
     				
@@ -43,13 +45,11 @@ export default {
 
 	data() {
 		return {
-			tabs: ['about', 'projects', 'services', 'contact']
+			tabs: ['home', 'about', 'projects', 'contact']
 		}
 	},
 
-	methods: {
-		
-	}
+	
 }
 </script>
 
@@ -65,6 +65,10 @@ export default {
 
 div.columns {
 	margin-top: 1rem;
+}
+
+.is-chosen {
+	border-bottom: 1px solid black;
 }
 
 

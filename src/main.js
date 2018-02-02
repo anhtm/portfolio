@@ -5,11 +5,14 @@ import App from './App'
 import router from './router'
 import 'bulma/css/bulma.css'
 import 'vue-awesome/icons'
+import VueCarousel from 'vue-carousel';
 
 import Icon from 'vue-awesome/components/Icon'
 import Button from '@/components/Button'
 
 Vue.config.productionTip = false
+Vue.use(VueCarousel);
+
 Vue.component('app-button', Button)
 Vue.component('app-icon', Icon)
 

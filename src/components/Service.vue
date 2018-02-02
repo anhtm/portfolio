@@ -41,4 +41,8 @@ export default {
 h4.title {
   margin-top: 2rem;
 }
+
+/*.column {
+  display: inline-flex;
+}*/
 </style>

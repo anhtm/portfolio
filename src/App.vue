@@ -2,9 +2,13 @@
   <div id="app">
     
     <app-navbar></app-navbar>
-    <router-view/>
-    <app-footer></app-footer>
+    <transition name="fade">
     
+      <router-view></router-view>
+      
+    </transition>
+    <app-footer></app-footer>
+
   </div>
 </template>
 
@@ -18,6 +22,15 @@ export default {
   components: {
     [Navbar.name]: Navbar,
     [Footer.name]: Footer,
+  },
+
+  created() {
+    let devicon_url = "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    let devicon = document.createElement('link')
+    devicon.setAttribute('href', devicon_url)
+    devicon.setAttribute('rel', 'stylesheet')
+
+    document.head.appendChild(devicon);
   }
 }
 </script>
@@ -30,6 +43,9 @@ export default {
 $black: #1E1B18;
 $black-invert: #fff;
 
+$red: #F54D42;
+$red-invert: #fff;
+
 $pink: #ff9068;
 $pink-invert: #fff;
 
@@ -38,7 +54,8 @@ $new-shadow: 3px 3px 7px #c3c3c3;
 
 $family-sanserif: "Roboto";
 
-
+$warning: $red;
+$warning-invert: $red-invert;
 $danger: $pink;
 $danger-invert: $pink-invert;
 $link: $black;
@@ -71,4 +88,12 @@ html,body {
 h3.title {
   margin-bottom: 5rem !important;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 </style>

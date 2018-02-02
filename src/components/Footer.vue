@@ -13,7 +13,7 @@
 
             <div>
               Git Repo 
-              <a id="git-repo" href="https://github.com/anhtm/my-portfolio">@my-portfolio</a>
+              <a id="git-repo" href="https://github.com/anhtm/my-portfolio">@portfolio</a>
             </div>
           </div>
 
@@ -32,8 +32,8 @@
             <p>
               <app-button 
                 name="Send Me A Message"
-                class="button is-danger has-text-black"
-                to-route="contact"> 
+                class="button is-warning"
+                href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank"> 
               </app-button>
             </p>
           </div>

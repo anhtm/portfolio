@@ -8,19 +8,20 @@
 
         <div class="columns is-multiline">
 
-          <service  v-for="service in services" 
+          <service  v-for="(service,i) in services" 
                     :title="service.title"
                    :sub-i="service.sub1"
                    :sub-ii="service.sub2"
                    :sub-iii="service.sub3"
-                   :icon-name="service.icon">
+                   :icon-name="service.icon"
+                   :key="i">
           </service>
-          
+
         </div>
 
         <!-- <a class="revert button is-black" href="mailto:anhtm.mtl@gmail.com?Subject=" target="_blank"> CONTACT ME</a> -->
 
-        <app-button name="Contact Me"></app-button>
+        <app-button name="Contact Me" class="is-warning"></app-button>
       </div>
     </section>
 	</div>
@@ -38,11 +39,11 @@ export default {
     return {
       services: [
         {
-          title: "Backend Development",
-          sub1: '',
+          title: "Web Design",
+          sub1: 'Wireframes & Prototypes',
           sub2: '',
           sub3: '',
-          icon: 'database'
+          icon: 'paint-brush'
         },
         {
           title: "Frontend Development",
@@ -52,12 +53,13 @@ export default {
           icon: 'user-circle'
         },
         {
-          title: "Web Design",
+          title: "Backend Development",
           sub1: '',
           sub2: '',
           sub3: '',
-          icon: 'paint-brush'
-        }
+          icon: 'database'
+        },
+        
       ]
     }
   }
