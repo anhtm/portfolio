@@ -4,15 +4,17 @@
 			<!-- <h1 class="title ">
 				C O N T A C T
 			</h1> -->
-			<div class="columns">
-				<div class="column is-12">
+			<div class="section">
+					
+					<p class="is-size-3">
+						anhtm.mtl@gmail.com
+					</p>
+					
+					<p class="is-size-3">(+1) 438-350-6987</p>
 
-					<p class="title is-1 has-text-weight-light">anhtm.mtl@gmail.com</p>
-					<p class="title is-1 has-text-weight-light">+1 438 350 6987</p>
-
-		            <app-button class="button is-warning" href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank">Send A Mail :)</app-button>
-				</div>
+		            
 			</div>
+			<app-button class="button is-warning" href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank">Send Me an Email :)</app-button>
 		</div>
 	</div>
 </template>

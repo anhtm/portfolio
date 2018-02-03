@@ -179,7 +179,7 @@ export default {
 				{
 					title: 'AbracadaChef',
 					whatIdid: 
-					'I was part of a team of 3 developers, and worked as a frontend developer. Our mission was to build a completely frontend application that renders data from a backend JSON API, and is fully responsive across devices. My responsibilities include building wireframes and prototypes of the application, and use the design to build the frontend architecture. I used Vue.js to handle and fetch data from our API, and Vue-router for routing and authentication. One of the biggest challenges for me was working with Amazon S3 Bucket in photos management, along with manipulating the photos on the interface.',
+					'I was part of a team of 3 developers, and worked as a frontend developer. Our mission was to build a completely frontend application that renders data from a backend JSON API, and is fully responsive across devices. My responsibilities include creating wireframes and prototypes of the application, and building the frontend architecture based on the design. I used Vue.js to handle and fetch data from our API, and Vue-router for routing and authentication. I learned a lot of new technologies and how to solve problems while implementing them into the application (Amazon S3 Bucket for photos management, Stripe.js for payment/payout procedures).',
 					technologies: ['Frontend', 'UI/UX Design', 'Vue.js', 'Javascript', 'Bulma CSS Framework', 'JSON APIs', 'Stripe.js', 'Amazon S3', 'Internationalization', 'HTML/CSS'],
 					url: 'https://abracadachef.com/#/',
 					date: 'January 28th 2018'
@@ -188,8 +188,8 @@ export default {
 				{
 					title: 'Buckist',
 					whatIdid: `
-						This was my first fullstack application which I built using Flask framework.
-						The idea was simple: build a bucket list application with fundamental CRUD functionalities. I used SQLAlchemy (a Flask extension) as to set up database schema. The most challenging part of the project was the deployment on Heroku. There were bugs that didn't appear in development environment but came up in deployment, which took quite a bit of researching to solve.`,
+						This was my first fullstack application, which I built using Flask framework.
+						The idea was simple: build a bucket list application with fundamental CRUD functionalities. I used SQLAlchemy (a Flask extension) as to set up the database schema. I found the most challenging part of the project was the deployment on Heroku. I was unfamiliar with the process, and found unexpected bugs, which took me quite a bit of time for researching and resolving.`,
 					technologies: ['Backend', 'Python on Flask', 'DevOps', 'Bulma CSS Framework', 'HTML/CSS', 'Javascript', 'jQuery', 'SQLAlchemy'],
 					url: 'https://buckist.herokuapp.com/',
 					date: 'September 30th 2017'
@@ -197,8 +197,8 @@ export default {
 
 				{
 					title: 'MemoZoo',
-					whatIdid: 'I built this simple single-player memory game as a small project to get to know jQuery and JavaScript when I started coding. Understanding the logic behind the game and implementing it in into Javascript was the challenge.',
-					technologies: ['Javascript', 'jQuery', 'HTML/CSS'],
+					whatIdid: 'I built this simple single-player memory game as a small project to get to know jQuery and JavaScript when I started coding. Understanding the logic behind the game and implementing it in into Javascript code was a major part of the project.',
+					technologies: ['UI', 'Javascript', 'jQuery', 'HTML/CSS'],
 					url: 'https://anhtm.github.io/memo-game/',
 					date: 'July 19th 2017'
 				}
