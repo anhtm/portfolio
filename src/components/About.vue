@@ -18,11 +18,11 @@
 
                 </br> </br>
 
-                I build web applications (Javascript & Python), both frontend and backend apps. I also do web design (UI) on the other hand.
+                I build web applications (JavaScript & Python); both frontend and backend. My areas of expertise are JavaScript frameworks. Web design (UI) is also part of the package.
 
                 </br> </br>
 
-                I'm currently enrolled in Computer Science course in College LaSalle, specialized in Video Game Programming, which is quite interesting.
+                I'm currently enrolled in Computer Science program in College LaSalle, specialized in Video Game Programming.
 
                 <br><br>
 

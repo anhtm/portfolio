@@ -22,58 +22,9 @@ export default {
   components: {
     [Navbar.name]: Navbar,
     [Footer.name]: Footer,
-  },
-
-  created() {
-    let devicon_url = "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    let devicon = document.createElement('link')
-    devicon.setAttribute('href', devicon_url)
-    devicon.setAttribute('rel', 'stylesheet')
-
-    document.head.appendChild(devicon);
   }
 }
 </script>
-
-<style lang="scss">
-
-@import "node_modules/bulma/sass/utilities/initial-variables";
-@import "node_modules/bulma/sass/utilities/functions";
-
-$black: #1E1B18;
-$black-invert: #fff;
-
-$red: #F54D42;
-$red-invert: #fff;
-
-$pink: #ff9068;
-$pink-invert: #fff;
-
-$hover-shadow: 5px 12px 40px #c3c3c3;
-$new-shadow: 3px 3px 7px #c3c3c3;
-
-$family-sanserif: "Roboto";
-
-$warning: $red;
-$warning-invert: $red-invert;
-$danger: $pink;
-$danger-invert: $pink-invert;
-$link: $black;
-$link-invert: $black-invert;
-$info: $black;
-$info-invert: $black-invert;
-$link-hover: $pink;
-
-$box-shadow: $new-shadow;
-$box-padding: 1.5rem;
-$box-link-hover-shadow: $hover-shadow;
-$button-hover-color: $pink;
-
-$card-shadow: $new-shadow;
-$card-header-shadow: none;
-
-@import "node_modules/bulma/bulma";
-</style>
 
 <style>
 html,body {
