@@ -12,7 +12,7 @@ $pink-invert: #fff;
 
 $hover-shadow: 5px 12px 40px #c3c3c3;
 $new-shadow: 3px 3px 7px #c3c3c3;
-
+$weight-light: 300;
 $family-sanserif: "Roboto";
 
 $warning: $red;
@@ -24,6 +24,9 @@ $link-invert: $black-invert;
 $info: $black;
 $info-invert: $black-invert;
 $link-hover: $pink;
+
+$body-weight: $weight-light;
+$body-size: 19px;
 
 $box-shadow: $new-shadow;
 $box-padding: 1.5rem;
