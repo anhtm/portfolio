@@ -55,16 +55,16 @@ export default {
     return {
       projects: [
         {
-          title: "AbracadaChef",
+          title: "Cooktu",
           description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform.",
         },
         {
           title: "Buckist",
-          description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes.",
+          description: "Buckist, in short for 'Bucket List', is a full-stack Flask application that helps users keep track of bucket ideas.",
         },
         {
           title: "MemoZoo",
-          description: "A single-player memory game in an animated animal theme, written in JavaScript and jQuery."
+          description: "A single-player memory game in an animated animal theme, empowered by JavaScript and jQuery."
         }
       ]
     }

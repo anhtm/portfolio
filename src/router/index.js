@@ -24,11 +24,11 @@ export default new Router({
     	name: 'about',
     	component: About
     },
-    {
-    	path: '/contact',
-    	name: 'contact',
-    	component: Contact
-    },
+    // {
+    // 	path: '/contact',
+    // 	name: 'contact',
+    // 	component: Contact
+    // },
     {
     	path: '/projects',
     	name: 'projects',

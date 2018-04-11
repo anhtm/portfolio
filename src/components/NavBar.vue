@@ -45,7 +45,7 @@ export default {
 
 	data() {
 		return {
-			tabs: ['home', 'about', 'projects', 'contact']
+			tabs: ['home', 'about', 'projects']
 		}
 	},
 

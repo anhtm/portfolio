@@ -14,23 +14,24 @@
         
               <div id="about-me" class="content">
                 <p>
-                Hi! I’m Minh, a <strong>web developer</strong> living in Montreal, Quebec. 
+                Welcome! My name is Minh, I'm web developer living in Montreal, Quebec. 
 
                 </br> </br>
 
-                I build web applications (JavaScript & Python); both frontend and backend. My areas of expertise are JavaScript frameworks. Web design (UI) is also part of the package.
+                I build web applications (JavaScript & Python); both frontend and backend. My areas of expertise are JavaScript frameworks. I also do web design as a hobbie.
 
                 </br> </br>
 
-                I'm currently enrolled in Computer Science program in College LaSalle, specialized in Video Game Programming.
+                At the same time I'm being enrolled in Computer Science program in College LaSalle, specialized in Video Game Programming.
 
                 <br><br>
 
-                I love modern and stunning interfaces, but also fascinated by the beauty of scalability and modularity of a great web app. Best of both worlds, I would say.
+                I love modern and stunning interfaces, but also fascinated by the beauty of scalability and modularity of a great web app.
 
                 <br><br>
-                If you need a website for either personal or professional use, don't hesitate to 
-                <router-link :to="{name: 'contact'}" class="is-warning">send me a message.</router-link> 
+                If you need to build a website for either personal or professional use, don't hesitate to 
+                <a href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank">send me a message.</a>
+                
                 </p>
               </div>
 
@@ -38,9 +39,12 @@
                           to-route="projects"
                           class="is-warning"
               ></app-button>
-              <app-button name="Say Hi!" 
-                          to-route="contact"
-              ></app-button>
+              
+              <app-button 
+                name="Say Hi"
+                class="button"
+                href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank"> 
+                </app-button>
 
             </div>
           </div>

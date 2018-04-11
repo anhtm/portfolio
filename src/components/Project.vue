@@ -10,7 +10,7 @@
 			<a class="button is-warning is-uppercased"
 				:href="projects[index].url">
 
-				Visit The Website 
+				Visit Website 
 			</a>
 
 			<span class="date">
@@ -23,7 +23,9 @@
 					<h1 class="title">
 						What I Did
 					</h1>
-					<p> {{ projects[index].whatIdid }}</p>
+					<ul>
+						<li v-for="item in projects[index].whatIdid"> {{ item }}</li>
+					</ul>
 				</div>
 				<div class="column is-offset-1" id="tech">
 					<h1 class="title">Technologies</h1>
@@ -177,27 +179,35 @@ export default {
 		return {
 			projects: [
 				{
-					title: 'AbracadaChef',
+					title: 'Cooktu',
 					whatIdid: 
-					'I was part of a team of 3 developers, and worked as a frontend developer. Our mission was to build a completely frontend application that renders data from a backend JSON API, and is fully responsive across devices. My responsibilities include creating wireframes and prototypes of the application, and building the frontend architecture based on the design. I used Vue.js to handle and fetch data from our API, and Vue-router for routing and authentication. I learned a lot of new technologies and how to solve problems while implementing them into the application (Amazon S3 Bucket for photos management, Stripe.js for payment/payout procedures).',
+					
+					[
+					 `-  Worked as a frontend developer in a team of 3. Our mission was to build a frontend application (a meal-sharing platform) that renders data from Django JSON API, and is fully responsive across devices.`,
+					 `-  In charge of the UI/UX design of the wireframes and prototypes, and developed the complete frontend architecture using Vue.js`,
+					 `-  Gained lots of useful experience while integrating Amazon S3 into photo storage management and Stripe.js for payment procedure.`
+					],
 					technologies: ['Frontend', 'UI/UX Design', 'Vue.js', 'Javascript', 'Bulma CSS Framework', 'JSON APIs', 'Stripe.js', 'Amazon S3', 'Internationalization', 'HTML/CSS'],
-					url: 'https://abracadachef.com/#/',
+					url: 'https://cooktu.com/#/',
 					date: 'January 28th 2018'
 				},
 
 				{
 					title: 'Buckist',
-					whatIdid: `
-						This was my first fullstack application, which I built using Flask framework.
-						The idea was simple: build a bucket list application with fundamental CRUD functionalities. I used SQLAlchemy (a Flask extension) as to set up the database schema. I found the most challenging part of the project was the deployment on Heroku. I was unfamiliar with the process, and found unexpected bugs, which took me quite a bit of time for researching and resolving.`,
-					technologies: ['Backend', 'Python on Flask', 'DevOps', 'Bulma CSS Framework', 'HTML/CSS', 'Javascript', 'jQuery', 'SQLAlchemy'],
+					
+					whatIdid: [
+						`-  Developed a bucket list application with fundamental CRUD operations.`,
+						`-  Implemented the full-stack application using Flask framework with SQLAlchemy (database schema) and Flask templating engine (interface).`,
+						`-  Deployed the final version in production.`
+					],
+					technologies: ['Fullstack', 'Python on Flask', 'DevOps', 'HTML/CSS', 'Javascript', 'jQuery', 'SQLAlchemy'],
 					url: 'https://buckist.herokuapp.com/',
 					date: 'September 30th 2017'
 				},
 
 				{
 					title: 'MemoZoo',
-					whatIdid: 'I built this simple single-player memory game as a small project to get to know jQuery and JavaScript when I started coding. Understanding the logic behind the game and implementing it in into Javascript code was a major part of the project.',
+					whatIdid: ['I built this simple single-player memory game as a small project to get to know jQuery and JavaScript when I started coding. Understanding the logic behind the game and implementing it in into Javascript code was a major part of the project.'],
 					technologies: ['UI', 'Javascript', 'jQuery', 'HTML/CSS'],
 					url: 'https://anhtm.github.io/memo-game/',
 					date: 'July 19th 2017'
