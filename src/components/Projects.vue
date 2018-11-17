@@ -4,38 +4,18 @@
     <section id="section-projects" class="section is-medium">
       <div class="container has-text-centered" id="projects">
 
-      <h3 class="title"> P R O J E C T S </h3>
+      <h3 class="title"> Projects & Hackathons </h3>
 
         <div class="columns is-multiline">
-
-          <!-- <div class="column is-4-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by2">
-                  <img src="assets/memogamev2.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <h4 class="has-text-centered is-size-3-desktop is-size-5-touch title is-marginless"> Memozoo </h4>
-                <p class="content">
-                Memozoo is a single-player memory game in an animated animal theme, written in JavaScript and jQuery.</p>
-                <a class="buttons button is-black" href="https://anhtm.github.io/memo-game/" target="_blank"> SEE PROJECT</a>
-                <a class="buttons button is-black" href="https://github.com/anhtm/memo-game" title="See code"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class=""
-               >
             <project v-for="(proj,index) in projects"
                      :title="proj.title"
                      :proj-key="index + 1"
                      :description="proj.description"
-                     :key="index">
+                     :img="proj.imgUrl"
+                     :key="index"
+                     class="project">
                         
             </project>
-          </div>
-          
         </div>
       </div>
     </section>
@@ -55,15 +35,33 @@ export default {
     return {
       projects: [
         {
-          title: "AbracadaChef",
+          title: "Fresh Fridge",
+          imgUrl: "https://preview.ibb.co/mnH2x0/Screenshot-20181116-171853.png",
+          description: "​A mobile application that helps keeping track of kitchen inventory and food expiry information to reduce domestic food waste."
+        },
+        {
+          title: "GitBit",
+          description: "​A tool that allows users to merge commits from various git hosting platforms to encourage code regurlarity and quality.",
+          imgUrl: "https://preview.ibb.co/gVCkH0/fcc-baner.png"
+        },
+        {
+          title: "BuildAR",
+          description: "​An application that uses camera input/output to project interactive & augmented how-to user manuals.",
+          imgUrl: "https://preview.ibb.co/hGJvjf/mission-hack.png" 
+        },
+        {
+          title: "Cooktu",
+          imgUrl: "https://image.ibb.co/nOLTPR/abcdchef_res.png",
           description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform.",
         },
         {
           title: "Buckist",
+          imgUrl: "https://image.ibb.co/cspKER/buckist_res.png",
           description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes.",
         },
         {
           title: "MemoZoo",
+          imgUrl: "https://image.ibb.co/ncf6Tm/memo_res.png",
           description: "A single-player memory game in an animated animal theme, written in JavaScript and jQuery."
         }
       ]

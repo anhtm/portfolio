@@ -33,7 +33,7 @@ html,body {
   background-color: white;
   color: #1E1B18;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 h3.title {

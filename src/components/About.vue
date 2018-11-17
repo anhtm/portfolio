@@ -9,28 +9,33 @@
             <div id="bio">
               
                 <h3 class="title is-spaced">
-                  A B O U T
+                  About me
                 </h3>
         
               <div id="about-me" class="content">
                 <p>
-                Hi! I’m Minh, a <strong>web developer</strong> living in Montreal, Quebec. 
+                Hi! My name is Minh. I'm a software developer based in Montreal, Quebec. 
 
                 </br> </br>
 
-                I build web applications (JavaScript & Python); both frontend and backend. My areas of expertise are JavaScript frameworks. Web design (UI) is also part of the package.
+                I'm currently doing my internship at Dynamicly. I use Javascript in my day-to-day work, including React.js & Node.js. I'm responsible for developing and maintaining an in-house React frontend library that we use across internal and external applications. I also do a lot of other things also! If you want to know more about me and my skill sets, send me a message, or check out my resume here.
 
                 </br> </br>
 
-                I'm currently enrolled in Computer Science program in College LaSalle, specialized in Video Game Programming.
+                I love puzzles since I was a kid, so for me solving problem is like playing a game - it's challenging but also very much interesting. Sometimes you lose, but in the end you always learn something new. 
 
                 <br><br>
 
-                I love modern and stunning interfaces, but also fascinated by the beauty of scalability and modularity of a great web app. Best of both worlds, I would say.
+                I'm also currently enrolled in Computer Science program at Lasallle College, and specialized in Video Game Programming. So yes, in my free time I build games or join hackathons for fun. I have participated in several hackathons, more details can be found here.
 
                 <br><br>
-                If you need a website for either personal or professional use, don't hesitate to 
-                <router-link :to="{name: 'contact'}" class="is-warning">send me a message.</router-link> 
+
+                So that's about it for me. If you'd love to have a chat with me or contact me for opportunities, please don't hesitate to <router-link :to="{name: 'contact'}" class="is-warning">send me a message.</router-link> 
+
+                <br><br>
+
+                Have a great day :)
+                
                 </p>
               </div>
 
@@ -57,14 +62,11 @@
 	</div>
 </template>
 
-<style scoped>
-	/* About */
-/*#section-about {
-  background-color: hsl(0, 0%, 96%)
-}*/
-
-#about-me p {
+<style lang="scss" scoped>
+#about-me {
+  p {
   text-align: justify;
   margin-bottom: 3rem;
+ } 
 }
 </style>

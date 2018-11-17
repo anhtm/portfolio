@@ -1,20 +1,20 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
 
-$black: #1E1B18;
+$black: #000125;
 $black-invert: #fff;
 
-$red: #F54D42;
+$red: #F4C109;
 $red-invert: #fff;
 
-$pink: #ff9068;
+$pink: #FF773D;
 $pink-invert: #fff;
 
 $hover-shadow: 5px 12px 40px #c3c3c3;
 $new-shadow: 3px 3px 7px #c3c3c3;
 
-$family-sanserif: "Roboto";
-
+$family-monospace: "Roboto Mono", monospace;
+$family-sans-serif: "Roboto", sans-serif;
 $warning: $red;
 $warning-invert: $red-invert;
 $danger: $pink;
@@ -30,7 +30,7 @@ $box-padding: 1.5rem;
 $box-link-hover-shadow: $hover-shadow;
 $button-hover-color: $pink;
 
-$family-primary: $family-sanserif;
+$family-primary: $family-monospace;
 
 $card-shadow: $new-shadow;
 $card-header-shadow: none;

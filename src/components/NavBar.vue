@@ -17,18 +17,15 @@
     	<div class="columns is-centered">
     		<div class="column is-half">
     			<div class="level">
-    				<div class="level-item"
-    					 v-for="tab in tabs"
-    					 
-    					 >
+    				<div class="level-item" v-for="tab in tabs">
     					<router-link 
-			            	class="is-link is-uppercase" 
-			            	:to="{name: tab}"
-			            	:class="{'is-chosen': $route.name == tab}">
+                v-if="tab !== 'resume'"
+                :to="{name: tab}"
+                :class="{'is-chosen': $route.name == tab}">
 
-			            	{{tab}}
-
-			            </router-link>
+                {{tab}}
+              </router-link>
+              <a v-else href="https://drive.google.com/file/d/1HN3porHXsg7TT1qDB3WbWXqu1yzyWFCM/view?usp=sharing" target="_blank">{{tab}}</a>
     				</div>
     				
     			</div>
@@ -45,7 +42,7 @@ export default {
 
 	data() {
 		return {
-			tabs: ['home', 'about', 'projects', 'contact']
+			tabs: ['home', 'about', 'projects', 'resume', 'contact']
 		}
 	},
 
@@ -72,10 +69,10 @@ div.columns {
 }
 
 
-/*.navbar-burger {
+.navbar-burger {
   margin-top: 1rem;
 }
 .navbar-burger:active {
   color: white !important;
-}*/
+}
 </style>
