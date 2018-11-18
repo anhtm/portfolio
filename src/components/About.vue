@@ -43,9 +43,12 @@
                           to-route="projects"
                           class="is-warning"
               ></app-button>
-              <app-button name="Say Hi!" 
-                          to-route="contact"
-              ></app-button>
+              
+              <app-button
+                name="Say Hi"
+                to-route="contact"
+                class="is-black">
+              </app-button>
 
             </div>
           </div>
