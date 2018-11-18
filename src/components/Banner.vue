@@ -6,7 +6,7 @@
         <div class="hero-body">
           <div class="container has-text-centered">
             <h2 
-                class="title intro is-size-5-mobile is-size-2-desktop is-spaced "
+                class="title intro is-size-5-touch is-size-3-desktop is-spaced"
                 id="my-name"> 
                 &lt;h1&gt; Hi, I'm Minh! I build software.&lt;/h1&gt;
             </h2>
@@ -28,14 +28,11 @@ export default {
 </script>
 
 <style scoped>
-	/* Banner */
-.hero {
-
-}
 
 #my-name {
-  color: black;
+  color: #1E1B18;
   font-weight: 300;
+  font-size: 2rem !important;
 }
 
 .button-group {
