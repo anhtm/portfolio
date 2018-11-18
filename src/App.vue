@@ -7,7 +7,7 @@
       <router-view></router-view>
       
     </transition>
-    <app-footer></app-footer>
+    <!-- <app-footer></app-footer> -->
 
   </div>
 </template>
@@ -33,7 +33,7 @@ html,body {
   background-color: white;
   color: #1E1B18;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 h3.title {
