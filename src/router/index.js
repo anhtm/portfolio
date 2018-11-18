@@ -4,11 +4,7 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
-import Services from '@/components/Services'
 import Project from '@/components/Project'
-import Skills from '@/components/Skills'
-
-
 
 Vue.use(Router)
 
@@ -39,15 +35,15 @@ export default new Router({
       name: 'project',
       component: Project
     },
-    {
-      path: '/services',
-      name: 'services',
-      component: Services
-    },
-    {
-      path: '/skills',
-      name: 'skills',
-      component: Skills
-    }
+    // {
+    //   path: '/services',
+    //   name: 'services',
+    //   component: Services
+    // },
+    // {
+    //   path: '/skills',
+    //   name: 'skills',
+    //   component: Skills
+    // }
   ]
 })

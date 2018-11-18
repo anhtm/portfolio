@@ -6,20 +6,22 @@
 				{{ projects[index].title }}
 			</h1>
 			
-			
-			<a class="button is-warning is-uppercased"
-				:href="projects[index].url">
+			<a class="button is-warning is-uppercased" 
+        target="_blank"
+				:href="projects[index].url" 
+        v-if="projects[index].url">
 				Visit Website 
 			</a>
 
       <a class="button is-black is-uppercased"
-				:href="projects[index].sourcecode">
+				:href="projects[index].sourcecode"
+        v-if="projects[index].sourcecode"
+        target="_blank">
 				Check Source Code 
 			</a>
 
 			<span class="date">
 				<small>{{ projects[index].date }}</small>
-				
 			</span>
 			
 			<div class="columns section">
@@ -27,7 +29,7 @@
 					<h1 class="title">
 						What I Did
 					</h1>
-					<p> {{ projects[index].whatIdid }}</p>
+					<p class="experience"> {{ projects[index].experience }}</p>
 				</div>
 				<div class="column is-offset-1" id="tech">
 					<h1 class="title">Technologies</h1>
@@ -40,7 +42,8 @@
 			</div>
 			
 			<div>
-				<button @click="goBack" class="button"> Go Back </button>
+				<button @click="goBack" class="button is-black"> Go Back </button>
+				<button @click="goNext" class="button is-warning" v-show="projects.length < 6"> Next </button>
 			</div>
 			
 		</div>
@@ -63,7 +66,14 @@ export default {
 	methods: {
 		goBack() {
 			this.$router.go(-1)
-		}
+    },
+    
+    goNext() {
+      const next =  Number(this.$route.params.key + 1);
+      
+      this.$router.push({ name: 'project', params: { key: next}});
+
+    }
 	},
 
 	computed: {
@@ -82,5 +92,9 @@ export default {
 
 .section {
   padding-left: 0 !important;
+}
+
+.experience {
+  text-align: justify;
 }
 </style>

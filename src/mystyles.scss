@@ -3,11 +3,11 @@
 
 $black: #000125;
 $black-invert: #fff;
+$blue: #4630EB;
+$yellow: #F4C109;
+$yellow-invert: #fff;
 
-$red: #F4C109;
-$red-invert: #fff;
-
-$pink: #FF773D;
+$pink: rgb(255, 155, 24);
 $pink-invert: #fff;
 
 $hover-shadow: 5px 12px 40px #c3c3c3;
@@ -15,15 +15,15 @@ $new-shadow: 3px 3px 7px #c3c3c3;
 
 $family-monospace: "Roboto Mono", monospace;
 $family-sans-serif: "Roboto", sans-serif;
-$warning: $red;
-$warning-invert: $red-invert;
+$warning: $yellow;
+$warning-invert: $yellow-invert;
 $danger: $pink;
 $danger-invert: $pink-invert;
-$link: $black;
+$link: $black ;
 $link-invert: $black-invert;
 $info: $black;
 $info-invert: $black-invert;
-$link-hover: $pink;
+$link-hover: $blue;
 
 $box-shadow: $new-shadow;
 $box-padding: 1.5rem;

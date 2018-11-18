@@ -18,7 +18,7 @@
 
                 </br> </br>
 
-                I'm currently doing my internship at Dynamicly. I use Javascript in my day-to-day work, including React.js & Node.js. I'm responsible for developing and maintaining an in-house React frontend library that we use across internal and external applications. I also do a lot of other things also! If you want to know more about me and my skill sets, send me a message, or check out my resume here.
+                I'm currently doing my internship at <a href="https://dynamicly.com/" target="_blank">Dynamicly</a>. I use Javascript in my day-to-day work, including React.js & Node.js. I'm responsible for developing and maintaining an in-house React frontend library that we use across internal and external applications. I also do a lot of other things also! If you want to know more about me and my skill sets, send me a message, or check out my <a href="https://drive.google.com/file/d/1HN3porHXsg7TT1qDB3WbWXqu1yzyWFCM/view?usp=sharing" target="_blank">resume</a>.
 
                 </br> </br>
 
@@ -26,7 +26,7 @@
 
                 <br><br>
 
-                I'm also currently enrolled in Computer Science program at Lasallle College, and specialized in Video Game Programming. So yes, in my free time I build games or join hackathons for fun. I have participated in several hackathons, more details can be found here.
+                I'm also currently enrolled in Computer Science program at Lasallle College, and specialized in Video Game Programming. So in my free time I build games or join hackathons for fun. I have participated in several <router-link :to="{name: 'projects'}" class="is-warning">hackathons</router-link> in the past, and won one! 
 
                 <br><br>
 
@@ -65,8 +65,12 @@
 <style lang="scss" scoped>
 #about-me {
   p {
-  text-align: justify;
-  margin-bottom: 3rem;
- } 
+    text-align: justify;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    color: #4630EB !important;
+  }
 }
 </style>

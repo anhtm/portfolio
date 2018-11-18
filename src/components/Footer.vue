@@ -11,21 +11,21 @@
               Created by <a id="git-acc" href="https://github.com/anhtm">@anhtm</a>
             </p>
 
-            <div>
-              Git Repo 
+            <p>
+              Git Repo
               <a id="git-repo" href="https://github.com/anhtm/my-portfolio">@portfolio</a>
-            </div>
+            </p>
           </div>
 
           <div class="column is-4">
             <p class="contacts"> Contact Me </p>
             <div id="my-contact">
               <p> 
-                <app-icon name="phone-square"></app-icon>
+                <fa-icon icon="phone-square"></fa-icon>
                 <span> (+1) 438-350-6987 </span>
               </p>
               <p>
-                <app-icon name="envelope"></app-icon>
+                <fa-icon icon="envelope"></fa-icon>
                 <span>anhtm.mtl@gmail.com</span>
               </p>
             </div>
@@ -41,29 +41,29 @@
           <div class="column">
             <p class="contacts"> Find Me On </p>
 
-            <p id="social-media">
+            <p class="social-media">
               <a 
                 href="https://www.linkedin.com/in/anhtm/" 
                 title="LinkedIn">
-                <app-icon name="linkedin-square" scale="2"></app-icon>
+                <fa-icon :icon="['fab', 'linkedin']" size="2x"></fa-icon>
               </a>
               <a 
                 href="https://https://github.com/anhtm" 
                 title="Github">
-                <app-icon name="github" scale="2"></app-icon>
+                <fa-icon :icon="['fab', 'github']" size="2x"></fa-icon>
                 
               </a>
 
               <a href="https://medium.com/@anhtm" 
                  title="Medium">
-                <app-icon name="medium" scale="2"></app-icon>
+                <fa-icon :icon="['fab', 'medium']" size="2x"></fa-icon>
                 
               </a>
             </p>
           </div>
 
         </div>
-      </div>
+      </div>`
     </section>
 	</div>
 </template>
@@ -75,36 +75,29 @@ export default {
 }
 </script>
 
-<style scoped>
-  /** Footer */
-
+<style lang="css" scoped>
 #footer {
   background-color: black !important;
-  color: whitesmoke;
 }
 
-#social-media a {
-  color: whitesmoke !important;
-}
-#social-media a:hover {
-  color: #ff9068 !important;
-  transition: color 0.3;
-}
-
-#social-media a {
+.social-media a {
   padding-right: 1rem;
+}
+
+.social-media a:hover {
+  color: #F4C109 !important;
+  transition: color 0.3;
 }
 
 .contacts {
   padding-bottom: 1rem;
 }
 
-#my-contact p {
-  font-weight: 400;
-}
-
 #git-acc, #git-repo {
-  color: #ff9068 !important;
+  color: #F4C109 !important;
 }
 
+p, a {
+  color: whitesmoke;
+}
 </style>

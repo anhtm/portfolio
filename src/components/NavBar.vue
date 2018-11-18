@@ -68,11 +68,14 @@ div.columns {
 	border-bottom: 1px solid black;
 }
 
-
 .navbar-burger {
   margin-top: 1rem;
 }
 .navbar-burger:active {
   color: white !important;
+}
+
+.router-link {
+  color: black !important;
 }
 </style>
