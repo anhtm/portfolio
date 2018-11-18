@@ -1,29 +1,29 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
 
-$black: #1E1B18;
+$black: #000125;
 $black-invert: #fff;
+$blue: #4630EB;
+$yellow: #F4C109;
+$yellow-invert: #fff;
 
-$red: #F54D42;
-$red-invert: #fff;
-
-$pink: #ff9068;
+$pink: rgb(255, 155, 24);
 $pink-invert: #fff;
 
 $hover-shadow: 5px 12px 40px #c3c3c3;
 $new-shadow: 3px 3px 7px #c3c3c3;
-$weight-light: 300;
-$family-sanserif: "Roboto";
 
-$warning: $red;
-$warning-invert: $red-invert;
+$family-monospace: "Roboto Mono", monospace;
+$family-sans-serif: "Roboto", sans-serif;
+$warning: $yellow;
+$warning-invert: $yellow-invert;
 $danger: $pink;
 $danger-invert: $pink-invert;
-$link: $black;
+$link: $black ;
 $link-invert: $black-invert;
 $info: $black;
 $info-invert: $black-invert;
-$link-hover: $pink;
+$link-hover: $blue;
 
 $body-weight: $weight-light;
 $body-size: 19px;
@@ -33,7 +33,7 @@ $box-padding: 1.5rem;
 $box-link-hover-shadow: $hover-shadow;
 $button-hover-color: $pink;
 
-$family-primary: $family-sanserif;
+$family-primary: $family-monospace;
 
 $card-shadow: $new-shadow;
 $card-header-shadow: none;

@@ -9,28 +9,32 @@
             <div id="bio">
               
                 <h3 class="title is-spaced">
-                  A B O U T
+                  About me
                 </h3>
         
               <div id="about-me" class="content">
                 <p>
-                Welcome! My name is Minh, I'm web developer living in Montreal, Quebec. 
+                Hi! My name is Minh. I'm a software developer based in Montreal, Quebec. 
 
                 </br> </br>
 
-                I build web applications (JavaScript & Python); both frontend and backend. My areas of expertise are JavaScript frameworks. I also do web design as a hobbie.
+                I'm currently doing my internship at <a href="https://dynamicly.com/" target="_blank">Dynamicly</a>. I use Javascript in my day-to-day work, including React.js & Node.js. I'm responsible for developing and maintaining an in-house React frontend library that we use across internal and external applications. I also do a lot of other things also! If you want to know more about me and my skill sets, send me a message, or check out my <a href="https://drive.google.com/file/d/1HN3porHXsg7TT1qDB3WbWXqu1yzyWFCM/view?usp=sharing" target="_blank">resume</a>.
 
                 </br> </br>
 
-                At the same time I'm being enrolled in Computer Science program in College LaSalle, specialized in Video Game Programming.
+                I love puzzles since I was a kid, so for me solving problem is like playing a game - it's challenging but also very much interesting. Sometimes you lose, but in the end you always learn something new. 
 
                 <br><br>
 
-                I love modern and stunning interfaces, but also fascinated by the beauty of scalability and modularity of a great web app.
+                I'm also currently enrolled in Computer Science program at Lasallle College, and specialized in Video Game Programming. So in my free time I build games or join hackathons for fun. I have participated in several <router-link :to="{name: 'projects'}" class="is-warning">hackathons</router-link> in the past, and won one! 
 
                 <br><br>
-                If you need to build a website for either personal or professional use, don't hesitate to 
-                <a href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank">send me a message.</a>
+
+                So that's about it for me. If you'd love to have a chat with me or contact me for opportunities, please don't hesitate to <router-link :to="{name: 'contact'}" class="is-warning">send me a message.</router-link> 
+
+                <br><br>
+
+                Have a great day :)
                 
                 </p>
               </div>
@@ -40,11 +44,11 @@
                           class="is-warning"
               ></app-button>
               
-              <app-button 
+              <app-button
                 name="Say Hi"
-                class="button"
-                href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank"> 
-                </app-button>
+                to-route="contact"
+                class="is-black">
+              </app-button>
 
             </div>
           </div>
@@ -61,14 +65,15 @@
 	</div>
 </template>
 
-<style scoped>
-	/* About */
-/*#section-about {
-  background-color: hsl(0, 0%, 96%)
-}*/
+<style lang="scss" scoped>
+#about-me {
+  p {
+    text-align: justify;
+    margin-bottom: 3rem;
+  }
 
-#about-me p {
-  text-align: justify;
-  margin-bottom: 3rem;
+  a {
+    color: #4630EB !important;
+  }
 }
 </style>
