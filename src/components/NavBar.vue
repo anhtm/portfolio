@@ -9,7 +9,7 @@
 	            	:to="{name: 'home'}"
 	            	id="brand-name">
 	            	 M I N H
-	            	</router-link>
+	          </router-link>
 	    		</div>
 	    	</div>
 	    </div>

@@ -17,9 +17,9 @@
             </p>
           </div>
 
-          <div class="column is-4">
+          <div class="column is-4" v-if="$route.name !== 'contact'">
             <p class="contacts"> Contact Me </p>
-            <div id="my-contact">
+            <div id="my-contact" class="contacts">
               <p> 
                 <fa-icon icon="phone-square"></fa-icon>
                 <span> (+1) 438-350-6987 </span>
@@ -30,11 +30,11 @@
               </p>
             </div>
             <p>
-              <app-button 
-                name="Send Me A Message"
+              <router-link 
                 class="button is-warning"
-                href="mailto:anhtm.mtl@gmail.com?Subject=Hi, Minh!" target="_blank"> 
-              </app-button>
+                :to="{name: 'contact'}"> 
+                Send a Message
+              </router-link>
             </p>
           </div>
 
@@ -44,18 +44,21 @@
             <p class="social-media">
               <a 
                 href="https://www.linkedin.com/in/anhtm/" 
-                title="LinkedIn">
+                title="LinkedIn"
+                target="_blank">
                 <fa-icon :icon="['fab', 'linkedin']" size="2x"></fa-icon>
               </a>
               <a 
-                href="https://https://github.com/anhtm" 
-                title="Github">
+                href="https://github.com/anhtm" 
+                title="Github"
+                target="_blank">
                 <fa-icon :icon="['fab', 'github']" size="2x"></fa-icon>
                 
               </a>
 
               <a href="https://medium.com/@anhtm" 
-                 title="Medium">
+                 title="Medium"
+                 target="_blank">
                 <fa-icon :icon="['fab', 'medium']" size="2x"></fa-icon>
                 
               </a>
