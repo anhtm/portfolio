@@ -34,16 +34,24 @@
 				<div class="column is-offset-1" id="tech">
 					<h1 class="title">Technologies</h1>
 					<ul>
-						<li v-for="item in projects[index].technologies">
+						<li v-for="(item, i) in projects[index].technologies" :key="i">
 							{{ item }}
 						</li>
 					</ul>
 				</div>
 			</div>
+
+      <carousel :perPage="1" class="section">
+        <slide class="slide" v-for="(img,i) in projects[index].images" :key="i">
+          <figure>
+            <img :src="img" alt="" border="0">
+          </figure>
+        </slide>
+      </carousel>
 			
 			<div>
 				<button @click="goBack" class="button is-black"> Go Back </button>
-				<button @click="goNext" class="button is-warning" v-show="projects.length < 6"> Next </button>
+				<!-- <button @click="goNext" class="button is-warning" v-if="index < 5"> Next </button> -->
 			</div>
 			
 		</div>
@@ -96,5 +104,9 @@ export default {
 
 .experience {
   text-align: justify;
+}
+
+.slide {
+  margin: 0 auto;
 }
 </style>

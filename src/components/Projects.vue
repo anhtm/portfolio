@@ -51,17 +51,20 @@ export default {
         },
         {
           title: "Cooktu",
-          imgUrl: "https://image.ibb.co/nOLTPR/abcdchef_res.png",
+          // imgUrl: "https://image.ibb.co/nOLTPR/abcdchef_res.png",
+          imgUrl: "https://preview.ibb.co/hgrBAL/Screenshot-from-2018-11-18-15-49-23.png",
           description: "An online meal-sharing application (SPA) that allows users to browse, book and pay for meal events through a secured platform.",
         },
         {
           title: "Buckist",
-          imgUrl: "https://image.ibb.co/cspKER/buckist_res.png",
+          // imgUrl: "https://image.ibb.co/cspKER/buckist_res.png",
+          imgUrl: "https://preview.ibb.co/mSr04f/Screenshot-from-2018-11-18-15-58-15.png",
           description: "In short for bucket list, Buckist is a full-stack Flask application that helps users keeping track of bucket ideas and wishes.",
         },
         {
           title: "MemoZoo",
-          imgUrl: "https://image.ibb.co/ncf6Tm/memo_res.png",
+          // imgUrl: "https://image.ibb.co/ncf6Tm/memo_res.png",
+          imgUrl: "https://preview.ibb.co/jLQtPf/Screenshot-from-2018-11-18-16-03-30.png",
           description: "A single-player memory game in an animated animal theme, written in JavaScript and jQuery."
         }
       ]
